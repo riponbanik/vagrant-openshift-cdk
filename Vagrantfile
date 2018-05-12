@@ -25,6 +25,7 @@ Vagrant.configure(2) do |config|
     config.vm.hostname = "cdk.lab.local"
     config.vm.network "private_network", ip: "192.168.56.101"
     config.vm.network "forwarded_port", host: 8443, guest: 8443, auto_correct: true
+  
 
     # Landrush DNS
     if Vagrant.has_plugin?("landrush")   
